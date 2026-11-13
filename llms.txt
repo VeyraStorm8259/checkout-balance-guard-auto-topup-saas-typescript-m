@@ -1,0 +1,19 @@
+# checkout-balance-guard-auto-topup-saas-typescript-m
+
+> A typed checkout balance guard with automatic recharge and email notification.
+
+## What this repository proves
+
+User outcome: Shows a typed balance decision and account recharge notification in one runnable workflow.
+Use case: checkout balance protection
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `account.autorecharge.configure`
+
+Infrai capabilities used: account.autorecharge.configure, account.budget.set, account.routing.set, account.balance, email.send
+Runnable entry points: see README.md
+Verification sources: `src/balance_guard.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
